@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.content{
+   min-height: 100vh;
+   background: linear-gradient(to bottom, #d60aa1, #b13d50);
+   padding: 100px 100px 0;
+}
+
+.content:before{
+   content: 'ZOOMX';
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20vh;
+   font-size: 20vw;
+   font-weight: 900;
+   color: rgba(0, 0, 0, .1);
+}
+
+.header{
+   top: 0;
+   left: 0;
+   display: flex;
+   position: absolute;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 40px 100px;
+}
+
+.logo img{
+   max-width: 100px;
+}
+
+.menu{
+   width: 30px;
+   height: 30px;
+   background: url(imagens/menu.png);
+   background-size: 30px;
+   cursor: pointer;
+   background-repeat: no-repeat;
+}
+
+.produto{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   margin-top: 1%;
+}
+
+.produto img{
+   width: 100%;
+   max-width: 50vw;
+}
+
+.descricao{
+   position: relative;
+   margin-top: 5%;
+}
+
+.descricao h2{
+   color: white;
+   font-size: 2.5em;
+}
+
+.descricao p{
+   color: white;
+   width: 60%;
+   margin-bottom: 30px;
+}
+
+.descricao a{
+   background-color: white;
+   color: black;
+   padding: 10px 20px;
+   font-weight: 600;
+   letter-spacing: 2px;
+   text-decoration: none;
+}
+
+.redes-sociais{
+   display: flex;
+   position: absolute;
+   bottom: 50px;
+   right: 100px;
+   justify-content: center;
+   align-items: center;
+   filter: invert(1);
+   flex-direction: column;
+}
+
+.redes-sociais li{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.redes-sociais li a{
+   transform: scale(0.7);
+}
+
+@media (max-width: 767px){
+   .content:before{
+      margin-top: 10vh;
+   }
+   .header{
+      padding: 20px 50px;
+   }
+
+   .content{
+      padding: 50px 50px 0;
+   }
+
+   .redes-sociais{
+      position: relative;
+      right: initial;
+      bottom: 0;
+      margin-top: 80px;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+   }
+   .redes-sociais ul{
+      display: flex;
+      align-items: center;
+   }
+
+   .redes-sociais li{
+      padding: 0;
+      display: inline-flex;
+      margin-right: 10px;
+   }
+
+}
+
+@media (max-width: 500px){
+   .descricao p{
+      width: 100%;
+   }
+}
